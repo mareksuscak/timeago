@@ -1,0 +1,22 @@
+machine:
+  node:
+    version: 6
+  environment:
+    PATH: "${PATH}:${HOME}/${CIRCLE_PROJECT_REPONAME}/node_modules/.bin"
+
+dependencies:
+  override:
+    - yarn
+  cache_directories:
+    - ~/.cache/yarn
+
+test:
+  override:
+    # Code Style check before anything else.
+    - mkdir -p $CIRCLE_TEST_REPORTS/eslint
+    - yarn lint -- --quiet -f junit -o $CIRCLE_TEST_REPORTS/eslint/eslint.xml
+
+    - mkdir -p $CIRCLE_TEST_REPORTS/jest
+    # --runInBand brings 50% speed improvement on resource constrained environments
+    - yarn test -- --coverage --runInBand
+    - mv coverage $CIRCLE_ARTIFACTS

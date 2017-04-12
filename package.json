@@ -1,0 +1,23 @@
+{
+  "name": "timeago",
+  "version": "1.0.0",
+  "description": "A byte-sized library for displaying a human-readable relative time.",
+  "keywords": [
+    "date",
+    "time",
+    "ago"
+  ],
+  "author": "Chute <hello@getchute.com>",
+  "license": "MIT",
+  "browser": "src/timeAgo.js",
+  "main": "src/timeAgo.js",
+  "scripts": {
+    "lint": "eslint .",
+    "test": "jest"
+  },
+  "devDependencies": {
+    "eslint": "^3.19.0",
+    "jest": "^19.0.0",
+    "mockdate": "^2.0.1"
+  }
+}

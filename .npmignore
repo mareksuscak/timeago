@@ -1,0 +1,4 @@
+**/*.spec.js
+.eslintignore
+.eslintrc.js
+circle.yml
