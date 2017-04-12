@@ -1,5 +1,5 @@
 {
-  "name": "timeago",
+  "name": "@chute/timeago",
   "version": "1.0.0",
   "description": "A byte-sized library for displaying a human-readable relative time.",
   "keywords": [
