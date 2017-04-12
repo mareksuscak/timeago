@@ -1,4 +1,4 @@
-# timeAgo [![CircleCI Status](https://circleci.com/gh/chute/timeago.svg?style=shield&circle-token=:circle-token)](https://circleci.com/gh/chute/timeago)
+# timeAgo [![CircleCI Status](https://circleci.com/gh/chute/timeago.svg?style=shield&circle-token=:circle-token)](https://circleci.com/gh/chute/timeago) [![npm version](https://badge.fury.io/js/%40chute%2Ftimeago.svg)](https://badge.fury.io/js/%40chute%2Ftimeago)
 
 A byte-sized library for displaying a human-readable relative time. Produces the same output as [Moment's](http://momentjs.com/) `fromNow` and `toNow` except it comes in a much smaller package.
 
